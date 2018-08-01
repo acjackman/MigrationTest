@@ -2,6 +2,7 @@
 
 namespace MigrationTest.XUnit
 {
+  [Collection("DbTests")]
   public class SharedDatabase : IClassFixture<DatabaseFixture>
   {
     [Fact]
